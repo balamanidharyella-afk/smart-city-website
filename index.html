@@ -1,0 +1,1095 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Neopolis Smart City - Autonomous urban infrastructure, real-time public telemetry, civic portals, and emergency services.">
+  <meta name="theme-color" content="#060b18">
+  <title>NEOPOLIS | Intelligent Smart City Portal</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Accessibility Skip Link -->
+  <a href="#main-content" class="skip-to-content">Skip to main content</a>
+
+  <!-- Live Civic Announcement Banner -->
+  <aside class="civic-alert-ticker" aria-label="City Status Ticker">
+    <div class="ticker-content">
+      <span class="ticker-badge"><span class="pulse-indicator"></span> CITY TELEMETRY LIVE</span>
+      <p class="ticker-text">
+        <strong>Transit Update:</strong> Autonomous Metro Lines 3 &amp; 7 operating at 100% capacity &bull; 
+        <strong>Air Quality:</strong> AQI 14 (Pristine) across all 8 districts &bull; 
+        <strong>Solar Grid:</strong> Microgrid storage at 94.6% optimal capacity &bull; 
+        <strong>Civic Notice:</strong> Annual Clean Energy Forum registration now open at Central Dome.
+      </p>
+    </div>
+  </aside>
+
+  <!-- Navigation Bar -->
+  <header class="site-header">
+    <div class="header-container">
+      <a href="#hero" class="brand-logo" aria-label="Neopolis Smart City Homepage">
+        <div class="logo-icon" aria-hidden="true">
+          <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <polygon points="20,2 38,12 38,28 20,38 2,28 2,12" stroke="#00F0FF" stroke-width="2.5" fill="rgba(0, 240, 255, 0.08)"/>
+            <polygon points="20,8 32,15 32,25 20,32 8,25 8,15" stroke="#38BDF8" stroke-width="1.8" fill="rgba(56, 189, 248, 0.15)"/>
+            <circle cx="20" cy="20" r="4" fill="#00F0FF"/>
+            <line x1="20" y1="8" x2="20" y2="16" stroke="#00F0FF" stroke-width="1.5"/>
+            <line x1="20" y1="24" x2="20" y2="32" stroke="#00F0FF" stroke-width="1.5"/>
+            <line x1="9" y1="15" x2="16" y2="19" stroke="#00F0FF" stroke-width="1.5"/>
+            <line x1="24" y1="21" x2="31" y2="25" stroke="#00F0FF" stroke-width="1.5"/>
+          </svg>
+        </div>
+        <div class="logo-text">
+          <span class="brand-title">NEOPOLIS</span>
+          <span class="brand-subtitle">SMART METROPOLIS</span>
+        </div>
+      </a>
+
+      <!-- Pure CSS Mobile Menu Trigger -->
+      <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Toggle Navigation Menu">
+      <label for="nav-toggle" class="nav-toggle-label" aria-hidden="true">
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
+      </label>
+
+      <!-- Navigation Links -->
+      <nav class="nav-menu" aria-label="Main Navigation">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#hero" class="nav-link">Overview</a></li>
+          <li class="nav-item"><a href="#stats" class="nav-link">Dashboard</a></li>
+          <li class="nav-item"><a href="#services" class="nav-link">Public Services</a></li>
+          <li class="nav-item"><a href="#locations" class="nav-link">City Hubs</a></li>
+          <li class="nav-item"><a href="#safety-tips" class="nav-link">Safety</a></li>
+          <li class="nav-item"><a href="#portals" class="nav-link">Civic Portals</a></li>
+        </ul>
+        <div class="nav-actions">
+          <a href="#emergency" class="btn-emergency-nav" aria-label="Quick Access Emergency Services">
+            <svg class="emergency-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/>
+              <line x1="12" y1="9" x2="12" y2="13"/>
+              <line x1="12" y1="17" x2="12.01" y2="17"/>
+            </svg>
+            <span>Emergency 911</span>
+          </a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section">
+      <div class="hero-backdrop" aria-hidden="true">
+        <div class="grid-overlay"></div>
+        <div class="glow-orb orb-1"></div>
+        <div class="glow-orb orb-2"></div>
+      </div>
+
+      <div class="container hero-container">
+        <div class="hero-content">
+          <div class="hero-badge">
+            <span class="status-dot"></span>
+            <span>NEXT-GEN CIVIC INFRASTRUCTURE &bull; REAL-TIME URBAN GRID</span>
+          </div>
+
+          <h1 class="hero-title">
+            The Intelligent Urban Future, <span class="gradient-text">Engineered for People.</span>
+          </h1>
+
+          <p class="hero-description">
+            Welcome to Neopolis—an interconnected metropolis driven by 100% renewable microgrids, autonomous transit networks, and zero-latency civic digital infrastructure designed for 2.4 million connected citizens.
+          </p>
+
+          <!-- Quick Access Civic Search -->
+          <div class="hero-search-wrapper" role="search">
+            <form class="hero-search-form" action="#services" method="get" onsubmit="return false;">
+              <div class="search-input-group">
+                <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <circle cx="11" cy="11" r="8"/>
+                  <line x1="21" y1="21" x2="16.65" y2="16.65"/>
+                </svg>
+                <input 
+                  type="text" 
+                  id="civic-search" 
+                  class="search-input" 
+                  placeholder="Search city services, transit routes, building permits, hospitals..."
+                  aria-label="Search city services"
+                >
+                <button type="submit" class="btn-search">
+                  <span>Explore</span>
+                  <svg viewBox="0 0 20 20" fill="currentColor" class="btn-arrow" aria-hidden="true">
+                    <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"/>
+                  </svg>
+                </button>
+              </div>
+            </form>
+            <div class="search-quick-tags" aria-label="Popular search queries">
+              <span class="tag-label">Trending Portals:</span>
+              <a href="#services" class="quick-tag">Metro Pass</a>
+              <a href="#services" class="quick-tag">EV Hyperchargers</a>
+              <a href="#locations" class="quick-tag">Quantum Cyberpark</a>
+              <a href="#emergency" class="quick-tag urgent-tag">Emergency Dispatch</a>
+              <a href="#portals" class="quick-tag">Solar Permits</a>
+            </div>
+          </div>
+
+          <!-- Quick Service Action Buttons -->
+          <div class="hero-cta-group">
+            <a href="#services" class="btn btn-primary">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
+                <line x1="8" y1="21" x2="16" y2="21"/>
+                <line x1="12" y1="17" x2="12" y2="21"/>
+              </svg>
+              <span>Public Services Directory</span>
+            </a>
+            <a href="#emergency" class="btn btn-emergency">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+              </svg>
+              <span>Immediate Emergency Help</span>
+            </a>
+            <a href="#locations" class="btn btn-secondary">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                <circle cx="12" cy="10" r="3"/>
+              </svg>
+              <span>Key Landmarks</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- City Statistics Dashboard -->
+    <section id="stats" class="stats-section">
+      <div class="container">
+        <div class="section-header text-center">
+          <div class="section-tag">REAL-TIME URBAN INTELLIGENCE</div>
+          <h2 class="section-title">Autonomous City Telemetry Dashboard</h2>
+          <p class="section-subtitle">
+            Continuous sensory telemetry streaming from 145,000 IoT environmental monitors, clean energy microgrids, and municipal mobility corridors.
+          </p>
+        </div>
+
+        <div class="stats-grid">
+          <!-- Stat 1: Renewable Energy -->
+          <div class="stat-card">
+            <div class="stat-header">
+              <div class="stat-icon-wrapper energy-accent">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/>
+                </svg>
+              </div>
+              <span class="stat-badge green-badge">&uarr; 4.8% YoY</span>
+            </div>
+            <div class="stat-body">
+              <div class="stat-value">86.4<span class="unit">%</span></div>
+              <h3 class="stat-label">Renewable Grid Energy</h3>
+              <p class="stat-detail">Solar photovoltaics, offshore tidal arrays, and distributed solid-state battery micro-storage.</p>
+              <div class="stat-progress-bar" role="progressbar" aria-valuenow="86.4" aria-valuemin="0" aria-valuemax="100">
+                <div class="progress-fill energy-fill" style="width: 86.4%;"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Stat 2: Wi-Fi Coverage -->
+          <div class="stat-card">
+            <div class="stat-header">
+              <div class="stat-icon-wrapper wifi-accent">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M5 12.55a11 11 0 0 1 14.08 0"/>
+                  <path d="M1.42 9a16 16 0 0 1 21.16 0"/>
+                  <path d="M8.53 16.11a6 6 0 0 1 6.95 0"/>
+                  <line x1="12" y1="20" x2="12.01" y2="20"/>
+                </svg>
+              </div>
+              <span class="stat-badge cyan-badge">99.8% Uptime</span>
+            </div>
+            <div class="stat-body">
+              <div class="stat-value">99.2<span class="unit">%</span></div>
+              <h3 class="stat-label">Public 6G &amp; Wi-Fi Mesh</h3>
+              <p class="stat-detail">Free ultra-gigabit connectivity accessible across public parks, transit lines, and residential zones.</p>
+              <div class="stat-progress-bar" role="progressbar" aria-valuenow="99.2" aria-valuemin="0" aria-valuemax="100">
+                <div class="progress-fill wifi-fill" style="width: 99.2%;"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Stat 3: Green Canopy -->
+          <div class="stat-card">
+            <div class="stat-header">
+              <div class="stat-icon-wrapper green-accent">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"/>
+                  <path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/>
+                </svg>
+              </div>
+              <span class="stat-badge green-badge">+140 Hectares</span>
+            </div>
+            <div class="stat-body">
+              <div class="stat-value">44.5<span class="unit">%</span></div>
+              <h3 class="stat-label">Urban Green Canopy</h3>
+              <p class="stat-detail">Biophilic vertical forests, sponge city bioswales, and carbon sequestration corridors.</p>
+              <div class="stat-progress-bar" role="progressbar" aria-valuenow="44.5" aria-valuemin="0" aria-valuemax="100">
+                <div class="progress-fill canopy-fill" style="width: 44.5%;"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Stat 4: Population -->
+          <div class="stat-card">
+            <div class="stat-header">
+              <div class="stat-icon-wrapper citizen-accent">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                  <circle cx="9" cy="7" r="4"/>
+                  <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                  <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                </svg>
+              </div>
+              <span class="stat-badge blue-badge">99.4% Happy</span>
+            </div>
+            <div class="stat-body">
+              <div class="stat-value">2.45<span class="unit">M</span></div>
+              <h3 class="stat-label">Connected Citizens</h3>
+              <p class="stat-detail">Registered residents accessing digital identity, e-voting, and instantaneous public municipal services.</p>
+              <div class="stat-progress-bar" role="progressbar" aria-valuenow="92" aria-valuemin="0" aria-valuemax="100">
+                <div class="progress-fill citizen-fill" style="width: 92%;"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Secondary Real-Time Telemetry Bar -->
+        <div class="telemetry-sub-bar" aria-label="Environmental Metrics">
+          <div class="telemetry-item">
+            <span class="telemetry-label">Air Quality Index</span>
+            <div class="telemetry-value"><span class="dot-green"></span> AQI 14 &bull; Pristine</div>
+          </div>
+          <div class="telemetry-divider"></div>
+          <div class="telemetry-item">
+            <span class="telemetry-label">Avg. Transit Commute</span>
+            <div class="telemetry-value">13.8 Mins (Autonomous Rapid Line)</div>
+          </div>
+          <div class="telemetry-divider"></div>
+          <div class="telemetry-item">
+            <span class="telemetry-label">Potable Water Purity</span>
+            <div class="telemetry-value">99.98% Nanofiltered Grade A</div>
+          </div>
+          <div class="telemetry-divider"></div>
+          <div class="telemetry-item">
+            <span class="telemetry-label">Active EV Fast Chargers</span>
+            <div class="telemetry-value">1,480 / 1,500 Available</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Public Services Grid -->
+    <section id="services" class="services-section">
+      <div class="container">
+        <div class="section-header text-center">
+          <div class="section-tag">CIVIC DIGITAL ECOSYSTEM</div>
+          <h2 class="section-title">Comprehensive Public Services</h2>
+          <p class="section-subtitle">
+            Engineered with modern accessibility, zero-bureaucracy digital workflows, and seamless 24/7 public availability.
+          </p>
+        </div>
+
+        <div class="services-grid">
+          <!-- Service 1: Transportation -->
+          <article class="service-card">
+            <div class="service-card-top">
+              <div class="service-icon icon-transport" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="3" y="3" width="18" height="15" rx="3"/>
+                  <line x1="3" y1="11" x2="21" y2="11"/>
+                  <circle cx="7" cy="15" r="1"/>
+                  <circle cx="17" cy="15" r="1"/>
+                  <line x1="5" y1="18" x2="3" y2="21"/>
+                  <line x1="19" y1="18" x2="21" y2="21"/>
+                </svg>
+              </div>
+              <span class="service-category">Mobility &amp; Transit</span>
+            </div>
+            <div class="service-card-content">
+              <h3 class="service-title">Autonomous Smart Transportation</h3>
+              <p class="service-text">
+                Real-time synchronized mobility connecting magnetic levitation metro lines, on-demand autonomous EV shuttles, and 1,500+ ultra-fast charging bays.
+              </p>
+              <ul class="service-features" aria-label="Key transportation highlights">
+                <li><span class="check-icon">&#10003;</span> Live transit ETA &amp; contactless NFC ticketing</li>
+                <li><span class="check-icon">&#10003;</span> Automated multimodal route optimization</li>
+                <li><span class="check-icon">&#10003;</span> Free carbon-neutral transit zones</li>
+              </ul>
+            </div>
+            <div class="service-card-footer">
+              <a href="#locations" class="btn-service-link" aria-label="Learn more about Autonomous Smart Transportation">
+                <span>View Transit Routes</span>
+                <svg viewBox="0 0 20 20" fill="currentColor" class="arrow-svg" aria-hidden="true">
+                  <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"/>
+                </svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- Service 2: Hospitals & Health -->
+          <article class="service-card">
+            <div class="service-card-top">
+              <div class="service-icon icon-health" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M22 12h-4l-3 9L9 3l-3 9H2"/>
+                </svg>
+              </div>
+              <span class="service-category">Healthcare &amp; Wellness</span>
+            </div>
+            <div class="service-card-content">
+              <h3 class="service-title">Connected Healthcare &amp; Trauma Care</h3>
+              <p class="service-text">
+                A unified municipal medical network with live ICU/bed triage telemetry, drone-delivered defibrillators, and 24/7 instant tele-consultation kiosks.
+              </p>
+              <ul class="service-features" aria-label="Key healthcare highlights">
+                <li><span class="check-icon">&#10003;</span> 8 Level-1 trauma centers with live bed tracking</li>
+                <li><span class="check-icon">&#10003;</span> 4.2-minute average emergency dispatch time</li>
+                <li><span class="check-icon">&#10003;</span> Encrypted citizen biometric health records</li>
+              </ul>
+            </div>
+            <div class="service-card-footer">
+              <a href="#emergency" class="btn-service-link" aria-label="Learn more about Connected Healthcare">
+                <span>Medical Facilities &amp; Care</span>
+                <svg viewBox="0 0 20 20" fill="currentColor" class="arrow-svg" aria-hidden="true">
+                  <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"/>
+                </svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- Service 3: Education & Innovation -->
+          <article class="service-card">
+            <div class="service-card-top">
+              <div class="service-icon icon-education" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M22 10v6M2 10l10-5 10 5-10 5z"/>
+                  <path d="M6 12v5c3 3 9 3 12 0v-5"/>
+                </svg>
+              </div>
+              <span class="service-category">Education &amp; STEM</span>
+            </div>
+            <div class="service-card-content">
+              <h3 class="service-title">Digital Education &amp; Future Labs</h3>
+              <p class="service-text">
+                Universal access to smart STEM campuses, public AI training clusters, robotics maker facilities, and accredited municipal technology fellowships.
+              </p>
+              <ul class="service-features" aria-label="Key education highlights">
+                <li><span class="check-icon">&#10003;</span> 42 digitally immersive public academies</li>
+                <li><span class="check-icon">&#10003;</span> Free open computing and quantum lab access</li>
+                <li><span class="check-icon">&#10003;</span> Lifelong continuous learning grants</li>
+              </ul>
+            </div>
+            <div class="service-card-footer">
+              <a href="#locations" class="btn-service-link" aria-label="Learn more about Digital Education">
+                <span>Explore Smart Campuses</span>
+                <svg viewBox="0 0 20 20" fill="currentColor" class="arrow-svg" aria-hidden="true">
+                  <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"/>
+                </svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- Service 4: Utilities & Waste -->
+          <article class="service-card">
+            <div class="service-card-top">
+              <div class="service-icon icon-utilities" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"/>
+                </svg>
+              </div>
+              <span class="service-category">Utilities &amp; Ecology</span>
+            </div>
+            <div class="service-card-content">
+              <h3 class="service-title">Autonomous Eco-Utilities &amp; Water</h3>
+              <p class="service-text">
+                Closed-loop pneumatic solid-waste evacuation, AI sensor-driven recycling sorters, and dual-pipeline greywater reclamation networks.
+              </p>
+              <ul class="service-features" aria-label="Key utilities highlights">
+                <li><span class="check-icon">&#10003;</span> 94.8% circular municipal waste diversion</li>
+                <li><span class="check-icon">&#10003;</span> Real-time ultrasonic water leak detection</li>
+                <li><span class="check-icon">&#10003;</span> Automatic microgrid utility credit billing</li>
+              </ul>
+            </div>
+            <div class="service-card-footer">
+              <a href="#portals" class="btn-service-link" aria-label="Learn more about Eco-Utilities">
+                <span>Manage Utilities Portal</span>
+                <svg viewBox="0 0 20 20" fill="currentColor" class="arrow-svg" aria-hidden="true">
+                  <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"/>
+                </svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- Service 5: Governance & Permits -->
+          <article class="service-card">
+            <div class="service-card-top">
+              <div class="service-icon icon-governance" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                  <polyline points="14 2 14 8 20 8"/>
+                  <line x1="16" y1="13" x2="8" y2="13"/>
+                  <line x1="16" y1="17" x2="8" y2="17"/>
+                  <polyline points="10 9 9 9 8 9"/>
+                </svg>
+              </div>
+              <span class="service-category">Digital Governance</span>
+            </div>
+            <div class="service-card-content">
+              <h3 class="service-title">100% Digital Civic Permits &amp; Registry</h3>
+              <p class="service-text">
+                Zero paperwork municipal services: instant architectural permits, automated property deed verification, and participatory citizen budgeting.
+              </p>
+              <ul class="service-features" aria-label="Key governance highlights">
+                <li><span class="check-icon">&#10003;</span> Instant AI review for standard building permits</li>
+                <li><span class="check-icon">&#10003;</span> Cryptographically verified digital residency</li>
+                <li><span class="check-icon">&#10003;</span> Transparent public treasury dashboards</li>
+              </ul>
+            </div>
+            <div class="service-card-footer">
+              <a href="#portals" class="btn-service-link" aria-label="Learn more about Digital Civic Permits">
+                <span>Access E-Governance Desk</span>
+                <svg viewBox="0 0 20 20" fill="currentColor" class="arrow-svg" aria-hidden="true">
+                  <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"/>
+                </svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- Service 6: Public Safety -->
+          <article class="service-card">
+            <div class="service-card-top">
+              <div class="service-icon icon-safety" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                </svg>
+              </div>
+              <span class="service-category">Public Safety</span>
+            </div>
+            <div class="service-card-content">
+              <h3 class="service-title">Intelligent Public Safety &amp; Alerts</h3>
+              <p class="service-text">
+                Multi-sensor earthquake early warning networks, automated thermal wildfire alerts, and connected emergency beacons on every smart lamppost.
+              </p>
+              <ul class="service-features" aria-label="Key safety highlights">
+                <li><span class="check-icon">&#10003;</span> 45-second seismic early warning broadcast</li>
+                <li><span class="check-icon">&#10003;</span> 2,800 emergency smart beacon stations</li>
+                <li><span class="check-icon">&#10003;</span> Direct connection to 911 dispatch operations</li>
+              </ul>
+            </div>
+            <div class="service-card-footer">
+              <a href="#emergency" class="btn-service-link" aria-label="Learn more about Intelligent Public Safety">
+                <span>View Emergency Services</span>
+                <svg viewBox="0 0 20 20" fill="currentColor" class="arrow-svg" aria-hidden="true">
+                  <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"/>
+                </svg>
+              </a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Important Locations Section -->
+    <section id="locations" class="locations-section">
+      <div class="container">
+        <div class="section-header text-center">
+          <div class="section-tag">CIVIC LANDMARKS &amp; TECH HUBS</div>
+          <h2 class="section-title">Key Metropolitan Locations</h2>
+          <p class="section-subtitle">
+            Visit our architectural landmarks, advanced research clusters, and interconnected multimodal transport nodes across Neopolis.
+          </p>
+        </div>
+
+        <div class="locations-grid">
+          <!-- Location 1 -->
+          <article class="location-card">
+            <div class="location-media">
+              <img 
+                src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=800&q=80" 
+                alt="Neopolis Civic Tower & Municipal Forum"
+                loading="lazy"
+                class="location-img"
+              >
+              <div class="location-badge">Civic Headquarters</div>
+            </div>
+            <div class="location-info">
+              <div class="location-district">District 1 &bull; Civic Core</div>
+              <h3 class="location-name">Neopolis Civic Tower &amp; Forum</h3>
+              <p class="location-desc">
+                The municipal epicenter housing the Citizen Assembly, digital registry archives, and open public forum with panoramic solar observation decks.
+              </p>
+              <div class="location-meta">
+                <div class="meta-row">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                    <circle cx="12" cy="10" r="3"/>
+                  </svg>
+                  <span>100 Nexus Boulevard, Central Plaza</span>
+                </div>
+                <div class="meta-row">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                    <circle cx="12" cy="12" r="10"/>
+                    <polyline points="12 6 12 12 16 14"/>
+                  </svg>
+                  <span>Public Hours: Mon - Fri &bull; 08:00 - 20:00</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Location 2 -->
+          <article class="location-card">
+            <div class="location-media">
+              <img 
+                src="https://images.unsplash.com/photo-1519501025264-65ba15a82390?auto=format&fit=crop&w=800&q=80" 
+                alt="Quantum Horizon Cyberpark & AI Labs"
+                loading="lazy"
+                class="location-img"
+              >
+              <div class="location-badge tech-badge">Tech Hub</div>
+            </div>
+            <div class="location-info">
+              <div class="location-district">District 4 &bull; Innovation Corridor</div>
+              <h3 class="location-name">Quantum Horizon Cyberpark</h3>
+              <p class="location-desc">
+                A 300,000 sq. meter deep-tech hub housing quantum computing labs, clean energy incubators, and high-performance computing centers.
+              </p>
+              <div class="location-meta">
+                <div class="meta-row">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                    <circle cx="12" cy="10" r="3"/>
+                  </svg>
+                  <span>450 AI Way, Cybernetics Boulevard</span>
+                </div>
+                <div class="meta-row">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                    <circle cx="12" cy="12" r="10"/>
+                    <polyline points="12 6 12 12 16 14"/>
+                  </svg>
+                  <span>Access: 24/7 for Registered Researchers</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Location 3 -->
+          <article class="location-card">
+            <div class="location-media">
+              <img 
+                src="https://images.unsplash.com/photo-1506146332389-18140dc7b2fb?auto=format&fit=crop&w=800&q=80" 
+                alt="Grand Multimodal Transit Nexus & Maglev Terminal"
+                loading="lazy"
+                class="location-img"
+              >
+              <div class="location-badge transit-badge">Transit Hub</div>
+            </div>
+            <div class="location-info">
+              <div class="location-district">District 3 &bull; Transport Nexus</div>
+              <h3 class="location-name">Grand Multimodal Maglev Terminal</h3>
+              <p class="location-desc">
+                Central transit spine connecting high-speed maglev intercity trains, regional autonomous hyper-shuttles, and subterranean metro arteries.
+              </p>
+              <div class="location-meta">
+                <div class="meta-row">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                    <circle cx="12" cy="10" r="3"/>
+                  </svg>
+                  <span>880 Velocity Parkway, Sector East</span>
+                </div>
+                <div class="meta-row">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                    <circle cx="12" cy="12" r="10"/>
+                    <polyline points="12 6 12 12 16 14"/>
+                  </svg>
+                  <span>Continuous 24/7 Service Operations</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Location 4 -->
+          <article class="location-card">
+            <div class="location-media">
+              <img 
+                src="https://images.unsplash.com/photo-1518241353330-0f7941c2d9b5?auto=format&fit=crop&w=800&q=80" 
+                alt="Biophilic Botanical Biosphere and Carbon Reserve"
+                loading="lazy"
+                class="location-img"
+              >
+              <div class="location-badge green-badge-loc">Eco Reserve</div>
+            </div>
+            <div class="location-info">
+              <div class="location-district">District 2 &bull; Eco Valley</div>
+              <h3 class="location-name">Biophilic Botanical Biosphere</h3>
+              <p class="location-desc">
+                A massive geodesic climate conservatory featuring 14,000 botanical species, passive air scrubbing, and climate resilience research gardens.
+              </p>
+              <div class="location-meta">
+                <div class="meta-row">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                    <circle cx="12" cy="10" r="3"/>
+                  </svg>
+                  <span>72 Canopy Drive, Greenbelt Corridor</span>
+                </div>
+                <div class="meta-row">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                    <circle cx="12" cy="12" r="10"/>
+                    <polyline points="12 6 12 12 16 14"/>
+                  </svg>
+                  <span>Daily: 06:00 - 22:00 &bull; Free Public Entry</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Location 5 -->
+          <article class="location-card">
+            <div class="location-media">
+              <img 
+                src="https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&w=800&q=80" 
+                alt="Apex Central Trauma and Genomic Hospital"
+                loading="lazy"
+                class="location-img"
+              >
+              <div class="location-badge emergency-badge-loc">Hospital Campus</div>
+            </div>
+            <div class="location-info">
+              <div class="location-district">District 1 &bull; Health Quarter</div>
+              <h3 class="location-name">Apex Central Medical Complex</h3>
+              <p class="location-desc">
+                Premier Level-1 trauma center with 1,200 smart telemetry beds, rooftop emergency heli-drones, and automated surgical triage centers.
+              </p>
+              <div class="location-meta">
+                <div class="meta-row">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                    <circle cx="12" cy="10" r="3"/>
+                  </svg>
+                  <span>210 Lifeline Avenue, Medical Ridge</span>
+                </div>
+                <div class="meta-row">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                    <circle cx="12" cy="12" r="10"/>
+                    <polyline points="12 6 12 12 16 14"/>
+                  </svg>
+                  <span>24/7 Trauma Dispatch &bull; Urgent Triage Open</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Location 6 -->
+          <article class="location-card">
+            <div class="location-media">
+              <img 
+                src="https://images.unsplash.com/photo-1477959858617-67f30bc75b82?auto=format&fit=crop&w=800&q=80" 
+                alt="Digital Arts & Civic Amphitheater"
+                loading="lazy"
+                class="location-img"
+              >
+              <div class="location-badge arts-badge">Culture &amp; Arts</div>
+            </div>
+            <div class="location-info">
+              <div class="location-district">District 5 &bull; Cultural Promenade</div>
+              <h3 class="location-name">Lumina Civic Arts &amp; Holographic Pavilion</h3>
+              <p class="location-desc">
+                An avant-garde waterfront pavilion featuring interactive holographic exhibits, public symphony halls, and digital citizen galleries.
+              </p>
+              <div class="location-meta">
+                <div class="meta-row">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                    <circle cx="12" cy="10" r="3"/>
+                  </svg>
+                  <span>15 Lumina Square, Harbor Promenade</span>
+                </div>
+                <div class="meta-row">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                    <circle cx="12" cy="12" r="10"/>
+                    <polyline points="12 6 12 12 16 14"/>
+                  </svg>
+                  <span>Tue - Sun &bull; 09:00 - 23:00</span>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Emergency Information Section -->
+    <section id="emergency" class="emergency-section">
+      <div class="emergency-backdrop" aria-hidden="true">
+        <div class="emergency-pulse-ring"></div>
+      </div>
+
+      <div class="container">
+        <!-- Emergency Section Banner -->
+        <div class="emergency-header">
+          <div class="emergency-alert-tag">
+            <span class="beacon-pulse"></span>
+            <span>CRITICAL CIVIC TELEMETRY &bull; 24/7 RAPID RESPONSE HOTLINES</span>
+          </div>
+          <h2 class="emergency-title">Emergency Command &amp; Citizen Dispatch</h2>
+          <p class="emergency-subtitle">
+            If you or someone nearby is experiencing a life-threatening crisis, medical emergency, fire, or immediate threat, contact emergency dispatch immediately. One-touch dialing available below.
+          </p>
+        </div>
+
+        <!-- Hotlines Grid -->
+        <div class="hotlines-grid" aria-label="Emergency Hotlines">
+          <!-- Police -->
+          <div class="hotline-card hotline-police">
+            <div class="hotline-top">
+              <div class="hotline-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                </svg>
+              </div>
+              <span class="hotline-status-pill">Active Patrol</span>
+            </div>
+            <div class="hotline-info">
+              <span class="hotline-type">Police &amp; Security Dispatch</span>
+              <a href="tel:911" class="hotline-number" aria-label="Call Police at 911">911 <span class="hotline-alt">/ 100</span></a>
+              <p class="hotline-desc">Immediate criminal threat, active defense, street incident, civic safety dispatch.</p>
+            </div>
+            <a href="tel:911" class="btn-hotline-call" aria-label="Dial Police Hotline">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+              </svg>
+              <span>Instant Call 911</span>
+            </a>
+          </div>
+
+          <!-- Ambulance -->
+          <div class="hotline-card hotline-ambulance">
+            <div class="hotline-top">
+              <div class="hotline-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M22 12h-4l-3 9L9 3l-3 9H2"/>
+                </svg>
+              </div>
+              <span class="hotline-status-pill">3.8 min avg ETA</span>
+            </div>
+            <div class="hotline-info">
+              <span class="hotline-type">Emergency Medical &amp; Trauma</span>
+              <a href="tel:108" class="hotline-number" aria-label="Call Ambulance at 108">108 <span class="hotline-alt">/ 911</span></a>
+              <p class="hotline-desc">Cardiac arrest, severe injury, advanced life support dispatch, drone defibrillators.</p>
+            </div>
+            <a href="tel:108" class="btn-hotline-call" aria-label="Dial Ambulance Hotline">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+              </svg>
+              <span>Instant Call 108</span>
+            </a>
+          </div>
+
+          <!-- Fire -->
+          <div class="hotline-card hotline-fire">
+            <div class="hotline-top">
+              <div class="hotline-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 3.5z"/>
+                </svg>
+              </div>
+              <span class="hotline-status-pill">Ready to Roll</span>
+            </div>
+            <div class="hotline-info">
+              <span class="hotline-type">Fire &amp; Rescue Service</span>
+              <a href="tel:101" class="hotline-number" aria-label="Call Fire and Rescue at 101">101 <span class="hotline-alt">/ 911</span></a>
+              <p class="hotline-desc">Building fires, hazmat containment, structural collapse, elevator extrication.</p>
+            </div>
+            <a href="tel:101" class="btn-hotline-call" aria-label="Dial Fire Hotline">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+              </svg>
+              <span>Instant Call 101</span>
+            </a>
+          </div>
+
+          <!-- Disaster Hotline -->
+          <div class="hotline-card hotline-disaster">
+            <div class="hotline-top">
+              <div class="hotline-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/>
+                  <line x1="12" y1="9" x2="12" y2="13"/>
+                  <line x1="12" y1="17" x2="12.01" y2="17"/>
+                </svg>
+              </div>
+              <span class="hotline-status-pill">Level 1 Standby</span>
+            </div>
+            <div class="hotline-info">
+              <span class="hotline-type">Disaster &amp; Crisis Helpline</span>
+              <a href="tel:112" class="hotline-number" aria-label="Call Disaster Command at 112">112 <span class="hotline-alt">/ 1077</span></a>
+              <p class="hotline-desc">Severe weather sirens, flash floods, seismic tremors, regional evacuation routing.</p>
+            </div>
+            <a href="tel:112" class="btn-hotline-call" aria-label="Dial Disaster Helpline">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+              </svg>
+              <span>Instant Call 112</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Safety Tips & Emergency Protocol Grid -->
+        <div id="safety-tips" class="safety-protocols-container">
+          <div class="safety-section-title">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#00F0FF" stroke-width="2" class="title-shield" aria-hidden="true">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+            </svg>
+            <h3>Citizen Quick Safety Protocols &amp; Action Guides</h3>
+          </div>
+
+          <div class="safety-grid">
+            <!-- Tip 1 -->
+            <div class="safety-card">
+              <div class="safety-card-number">01</div>
+              <h4 class="safety-card-heading">Seismic &amp; Structural Tremors</h4>
+              <p class="safety-card-text">
+                When early warning sirens broadcast, immediate action is required: <strong>Drop, Cover, and Hold On</strong>. Keep away from exterior glass. All smart elevators automatically park at nearest floors.
+              </p>
+              <div class="safety-badge-tag">Auto-Warning 45s Advance</div>
+            </div>
+
+            <!-- Tip 2 -->
+            <div class="safety-card">
+              <div class="safety-card-number">02</div>
+              <h4 class="safety-card-heading">Severe Storm &amp; Flash Surge</h4>
+              <p class="safety-card-text">
+                Follow dynamic holographic street arrows to subterranean stormwater shelters. Do not enter underpasses. Power lines automatically isolate within milliseconds of water contact.
+              </p>
+              <div class="safety-badge-tag">Flood Gates Automated</div>
+            </div>
+
+            <!-- Tip 3 -->
+            <div class="safety-card">
+              <div class="safety-card-number">03</div>
+              <h4 class="safety-card-heading">Automated AED &amp; First Aid</h4>
+              <p class="safety-card-text">
+                AED trauma packs are installed every 150 meters on all smart light poles. Touch the red beacon to unlock instructions and alert paramedics to your precise GPS location.
+              </p>
+              <div class="safety-badge-tag">150m Proximity Array</div>
+            </div>
+
+            <!-- Tip 4 -->
+            <div class="safety-card">
+              <div class="safety-card-number">04</div>
+              <h4 class="safety-card-heading">Municipal Digital Safe Zones</h4>
+              <p class="safety-card-text">
+                In citywide power grid events, designated civic schools and metro terminals activate microgrid auxiliary generators with satellite communications and potable water supply.
+              </p>
+              <div class="safety-badge-tag">Microgrid Islanding 72h+</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Civic Portals Fast-Access Section -->
+    <section id="portals" class="portals-section">
+      <div class="container">
+        <div class="section-header text-center">
+          <div class="section-tag">CONNECTED CITIZEN GATEWAY</div>
+          <h2 class="section-title">Essential City Portals &amp; Tools</h2>
+          <p class="section-subtitle">
+            One authenticated citizen pass connects you to municipal applications, e-voting, and public utility billing.
+          </p>
+        </div>
+
+        <div class="portals-grid">
+          <a href="#services" class="portal-chip">
+            <span class="chip-icon">&#128652;</span>
+            <div class="chip-info">
+              <strong class="chip-name">Neopolis Transit Pass</strong>
+              <span class="chip-meta">Manage contactless bus &amp; rail passes</span>
+            </div>
+          </a>
+
+          <a href="#services" class="portal-chip">
+            <span class="chip-icon">&#9889;</span>
+            <div class="chip-info">
+              <strong class="chip-name">Smart Meter Utility Bill</strong>
+              <span class="chip-meta">View solar feed-in tariff &amp; pay power</span>
+            </div>
+          </a>
+
+          <a href="#services" class="portal-chip">
+            <span class="chip-icon">&#128221;</span>
+            <div class="chip-info">
+              <strong class="chip-name">Digital Building Permits</strong>
+              <span class="chip-meta">Submit BIM models for 24h AI approval</span>
+            </div>
+          </a>
+
+          <a href="#services" class="portal-chip">
+            <span class="chip-icon">&#128101;</span>
+            <div class="chip-info">
+              <strong class="chip-name">Participatory Budgeting</strong>
+              <span class="chip-meta">Vote on District 1-8 infrastructure funds</span>
+            </div>
+          </a>
+
+          <a href="#emergency" class="portal-chip">
+            <span class="chip-icon">&#127973;</span>
+            <div class="chip-info">
+              <strong class="chip-name">Triage Bed Tracker</strong>
+              <span class="chip-meta">Live hospital capacity &amp; wait times</span>
+            </div>
+          </a>
+
+          <a href="#services" class="portal-chip">
+            <span class="chip-icon">&#127793;</span>
+            <div class="chip-info">
+              <strong class="chip-name">Adopt-a-Green-Roof</strong>
+              <span class="chip-meta">Civic canopy subsidies &amp; seedling orders</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-top">
+      <div class="container footer-grid">
+        <!-- Col 1: Brand & Civic Info -->
+        <div class="footer-col footer-brand-col">
+          <div class="footer-brand">
+            <div class="logo-icon small-icon" aria-hidden="true">
+              <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <polygon points="20,2 38,12 38,28 20,38 2,28 2,12" stroke="#00F0FF" stroke-width="2.5" fill="rgba(0, 240, 255, 0.08)"/>
+                <circle cx="20" cy="20" r="4" fill="#00F0FF"/>
+              </svg>
+            </div>
+            <div class="logo-text">
+              <span class="brand-title">NEOPOLIS</span>
+              <span class="brand-subtitle">SMART METROPOLIS AUTHORITY</span>
+            </div>
+          </div>
+          <p class="footer-desc">
+            Neopolis is a designated sustainable smart municipal district operating under the Global Green Civic Charter. Powered by carbon-neutral intelligence and participatory democracy.
+          </p>
+          <div class="civic-contacts">
+            <div class="contact-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                <circle cx="12" cy="10" r="3"/>
+              </svg>
+              <span>100 Nexus Boulevard, Civic Center Plaza, District 1</span>
+            </div>
+            <div class="contact-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                <polyline points="22,6 12,13 2,6"/>
+              </svg>
+              <span>citizen-desk@neopolis.gov</span>
+            </div>
+            <div class="contact-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+              </svg>
+              <span>Civic General Inquiries: (311) 555-NEO-CITY</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Col 2: Public Portals Links -->
+        <div class="footer-col">
+          <h4 class="footer-heading">City Portals</h4>
+          <ul class="footer-links">
+            <li><a href="#services">Autonomous Transit Tracker</a></li>
+            <li><a href="#services">Health &amp; Clinic Bed Availability</a></li>
+            <li><a href="#portals">Smart Meter Power Billing</a></li>
+            <li><a href="#portals">Online Planning &amp; Permits</a></li>
+            <li><a href="#portals">Civic Participatory E-Voting</a></li>
+            <li><a href="#stats">Live IoT Environmental Telemetry</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Civic Government -->
+        <div class="footer-col">
+          <h4 class="footer-heading">Civic Governance</h4>
+          <ul class="footer-links">
+            <li><a href="#locations">Mayor &amp; City Council Chambers</a></li>
+            <li><a href="#stats">Open Treasury &amp; Real-time Budget</a></li>
+            <li><a href="#services">District Urban Master Plan 2050</a></li>
+            <li><a href="#safety-tips">Emergency Preparedness Protocols</a></li>
+            <li><a href="#locations">Public Innovation Sandbox</a></li>
+            <li><a href="#hero">Citizen Rights &amp; Digital Charter</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Newsletter Signup -->
+        <div class="footer-col footer-newsletter-col">
+          <h4 class="footer-heading">Citizen Weekly Dispatch</h4>
+          <p class="newsletter-desc">
+            Receive verified municipal alerts, district development updates, and community innovation notices directly to your inbox.
+          </p>
+          <form class="newsletter-form" action="#hero" method="get" onsubmit="return false;">
+            <div class="newsletter-input-group">
+              <input 
+                type="email" 
+                class="newsletter-input" 
+                placeholder="citizen@neopolis.gov" 
+                required 
+                aria-label="Email address for municipal newsletter"
+              >
+              <button type="submit" class="btn-subscribe">
+                <span>Subscribe</span>
+              </button>
+            </div>
+            <span class="privacy-note">Zero spam. Protected by Municipal Privacy Ordinance 42-A.</span>
+          </form>
+
+          <div class="social-links-group" aria-label="Official Civic Channels">
+            <span class="social-label">Follow Official Channels:</span>
+            <div class="social-icons">
+              <a href="#hero" class="social-chip" aria-label="Civic Mastodon Feed">Mastodon</a>
+              <a href="#hero" class="social-chip" aria-label="Civic GitHub Repositories">GitHub</a>
+              <a href="#hero" class="social-chip" aria-label="Civic Matrix Chat">Matrix</a>
+              <a href="#hero" class="social-chip" aria-label="Civic Radio Station">Radio 94.2</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer Bottom -->
+    <div class="footer-bottom">
+      <div class="container footer-bottom-container">
+        <div class="copyright-text">
+          &copy; 2026 Neopolis Smart City Authority. Designed with civic-tech open standards.
+        </div>
+        <div class="footer-bottom-links">
+          <a href="#hero">Digital Privacy Rights</a>
+          <span class="sep">&bull;</span>
+          <a href="#hero">Open Data License</a>
+          <span class="sep">&bull;</span>
+          <a href="#hero">Accessibility (WCAG 2.1 AAA)</a>
+          <span class="sep">&bull;</span>
+          <a href="#hero" class="back-to-top">Back to top &uarr;</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
