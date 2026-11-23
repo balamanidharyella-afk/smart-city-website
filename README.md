@@ -2,6 +2,9 @@
 
 A modern, responsive civic-tech web portal for the intelligent metropolis of **Neopolis**, built exclusively using pure **HTML5** and **CSS3** (`index.html` and `styles.css`) with zero external JavaScript dependencies.
 
+🔗 **Live Demo (GitHub Pages)**: [https://balamanidharyella-afk.github.io/smart-city-website/](https://balamanidharyella-afk.github.io/smart-city-website/)  
+📦 **GitHub Repository**: [https://github.com/balamanidharyella-afk/smart-city-website](https://github.com/balamanidharyella-afk/smart-city-website)
+
 ---
 
 ## 🌆 Overview & Vision
